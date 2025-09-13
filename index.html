@@ -38,6 +38,88 @@
         <main class="space-y-16">
 
             <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE ACTUALIZACIÓN                               -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título de la Actualización -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">AJUSTE DE HABILIDAD: Tormenta de Fuego</h2>
+                
+                <!-- Imagen del personaje centrada -->
+                <div class="flex justify-center mb-6">
+                    <img src="https://i.imgur.com/OOmPs5e.png" alt="Personaje Tormenta de Fuego" class="rounded-lg object-contain max-h-60 bg-gray-900/50 p-2 border-2 border-yellow-500">
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Columna ANTES -->
+                    <div class="border-l-4 border-red-500 pl-4">
+                        <h3 class="font-teko text-3xl text-red-400 mb-3">ANTES: "Cañonada"</h3>
+                        <img src="https://i.imgur.com/suS25wv.png" alt="Icono anterior de la habilidad" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-red-500 w-24 h-24">
+                        <p class="text-gray-400 mb-4">
+                            El personaje se transformaba en una torreta estática. Los ataques básicos infligían daño físico diferenciado a jugadores y mobs.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li><span class="font-bold text-white">Transformación:</span> <span class="text-gray-400">Torreta por 25s.</span></li>
+                            <li><span class="font-bold text-white">Daño Físico:</span> <span class="text-gray-400"><span class="font-bold text-orange-400">250%</span> a jugadores, <span class="font-bold text-orange-400">150%</span> a mobs.</span></li>
+                            <li><span class="font-bold text-white">Crítico:</span> <span class="text-gray-400"><span class="font-bold text-orange-400">150%</span> de daño crítico.</span></li>
+                            <li><span class="font-bold text-white">Enfriamiento:</span> <span class="text-gray-400">9.3 segundos.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna AHORA -->
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h3 class="font-teko text-3xl text-green-400 mb-3">AHORA: "Modo de cañonazo"</h3>
+                        <img src="https://i.imgur.com/suS25wv.png" alt="Icono nuevo de la habilidad" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-green-500 w-24 h-24">
+                        <p class="text-gray-300 font-medium mb-4">
+                            La transformación ahora permite movimiento lento y otorga resistencia mágica. El daño se unifica y se vuelve de área.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                             <li><span class="font-bold text-white">Transformación:</span> <span class="text-gray-400">Forma de cañón por 25s, con movimiento lento.</span></li>
+                            <li><span class="font-bold text-white">Buff:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+80 Resistencia Mágica</span>.</span></li>
+                            <li><span class="font-bold text-white">Daño Físico (AoE):</span> <span class="text-gray-400"><span class="font-bold text-orange-400">230%</span> a los enemigos golpeados.</span></li>
+                            <li><span class="font-bold text-white">Crítico:</span> <span class="text-gray-400"><span class="font-bold text-orange-400">150%</span> de daño crítico.</span></li>
+                            <li><span class="font-bold text-white">Enfriamiento:</span> <span class="text-gray-400">9.5 segundos.</span></li>
+                            <li><span class="font-bold text-white">Alcance:</span> <span class="text-gray-400">30 metros.</span></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <hr class="border-gray-700 my-8">
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Columna ANTES PASIVA -->
+                     <div class="border-l-4 border-red-500 pl-4">
+                        <h3 class="font-teko text-3xl text-red-400 mb-3">PASIVA ANTES: "Decisión"</h3>
+                        <img src="https://i.imgur.com/6bddIR4.png" alt="Icono anterior de la pasiva" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-red-500 w-24 h-24">
+                        <p class="text-gray-400 mb-4">
+                            Al estar quieto, se obtenía una acumulación que aumentaba la probabilidad de crítico y la resistencia al daño.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li><span class="font-bold text-white">Efecto por acumulación:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+2% Tasa Crítica</span> y <span class="text-green-400 font-bold">+2% Resistencia al Daño</span>.</span></li>
+                            <li><span class="font-bold text-white">Duración:</span> <span class="text-gray-400">2 segundos.</span></li>
+                            <li><span class="font-bold text-white">Acumulaciones Máximas:</span> <span class="text-gray-400">15</span></li>
+                        </ul>
+                    </div>
+                    <!-- Columna AHORA PASIVA -->
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h3 class="font-teko text-3xl text-green-400 mb-3">PASIVA AHORA: "Resuelve"</h3>
+                        <img src="https://i.imgur.com/6bddIR4.png" alt="Icono nuevo de la pasiva" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-green-500 w-24 h-24">
+                        <p class="text-gray-300 font-medium mb-4">
+                           Ahora, al estar quieto, la acumulación aumenta la probabilidad de crítico y el daño infligido.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                             <li><span class="font-bold text-white">Efecto por acumulación:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+2% Tasa Crítica</span> y <span class="text-green-400 font-bold">+1.5% de Daño</span>.</span></li>
+                             <li><span class="font-bold text-white">Duración:</span> <span class="text-gray-400">3 segundos.</span></li>
+                             <li><span class="font-bold text-white">Acumulaciones Máximas:</span> <span class="text-gray-400">15</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE ACTUALIZACIÓN                                  -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
             <!-- INICIO DE UN BLOQUE DE NUEVO PERSONAJE                             -->
             <!-- ================================================================== -->
             <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
@@ -325,4 +407,3 @@
 
 </body>
 </html>
-
