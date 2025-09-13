@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nómadas - Registro de Actualizaciones</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #111827; /* bg-gray-900 */
+        }
+        .font-teko {
+            font-family: 'Teko', sans-serif;
+        }
+        /* Estilo para la imagen expandible */
+        .expandable-image {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .expandable-image:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="text-gray-300">
+
+    <div class="container mx-auto px-4 py-12">
+        <!-- Encabezado de la página -->
+        <header class="text-center mb-12">
+            <h1 class="font-teko text-6xl font-bold tracking-widest text-white uppercase">Registro de Cambios</h1>
+            <p class="text-xl text-yellow-400">Actualizaciones y notas del parche de Warborne</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NUEVO PERSONAJE                             -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Personaje con color cian -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-cyan-400 pb-2 mb-6">NUEVO PERSONAJE: <span class="text-cyan-400">Vire</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                        <img src="https://i.imgur.com/eX4HmSd.png" alt="Nuevo personaje Vire" class="expandable-image rounded-lg object-contain max-h-96 mx-auto bg-gray-900/50 p-2 border-2 border-cyan-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-cyan-500 pl-6 space-y-6">
+                        <div>
+                            <h3 class="font-teko text-3xl text-cyan-400 mb-3">Habilidad: "Tormenta eléctrica"</h3>
+                            <p class="text-gray-300 font-medium mb-4">
+                               Canaliza una devastadora tormenta de semillas de sangre que explotan en área, causando daño y curando al lanzador.
+                            </p>
+                            <ul class="space-y-2">
+                                <li><span class="font-bold text-white">Mecánica:</span> <span class="text-gray-400">Canaliza por 5s, creando 40 semillas que explotan tras 1.5s.</span></li>
+                                <li><span class="font-bold text-white">Efecto:</span> <span class="text-gray-400"><span class="text-fuchsia-400 font-bold">100% Daño Mágico</span> (máx 5 enemigos).</span></li>
+                                <li><span class="font-bold text-white">Curación:</span> <span class="text-gray-400">Si golpea a un enemigo, <span class="text-green-400 font-bold">restaura 15% de vida</span>.</span></li>
+                                <li><span class="font-bold text-white">Buffs durante canalización:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">Ininterrumpible</span>, <span class="text-green-400 font-bold">+30% Vel. de Movimiento</span> (decae).</span></li>
+                                <li><span class="font-bold text-white">Estadísticas:</span> <span class="text-gray-400">Alcance 7m, Enfriamiento 42s, Lanzamiento 0.79s.</span></li>
+                            </ul>
+                        </div>
+                        <div class="pt-4 border-t border-gray-700">
+                            <h3 class="font-teko text-3xl text-cyan-400 mb-3">Pasiva: "Marca relámpago"</h3>
+                             <p class="text-gray-300 font-medium mb-4">
+                               Aplica una maldición que explota después de un tiempo, devolviendo un porcentaje del daño infligido.
+                            </p>
+                            <ul class="space-y-2">
+                                <li><span class="font-bold text-white">Aplicación:</span> <span class="text-gray-400">Con habilidades y ataques básicos.</span></li>
+                                <li><span class="font-bold text-white">Efecto:</span> <span class="text-gray-400">Aplica <span class="text-red-400 font-bold">Maldición Sangrienta</span> por 6s.</span></li>
+                                <li><span class="font-bold text-white">Explosión:</span> <span class="text-gray-400">Al terminar, explota por <span class="text-fuchsia-400 font-bold">30% del daño infligido</span> como <span class="text-fuchsia-400 font-bold">Daño Mágico</span>.</span></li>
+                                <li><span class="font-bold text-white">Recarga de la Pasiva:</span> <span class="text-gray-400">25 segundos.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NUEVO PERSONAJE                                -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NOVEDAD                                     -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Objeto con color morado -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">NUEVO OBJETO: <span class="text-purple-400">Rifle Fotónico</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                         <!-- Imagen del Rifle actualizada -->
+                        <img src="https://i.imgur.com/4awbizU.png" alt="Rifle Fotónico" class="rounded-lg object-cover bg-gray-900/50 p-2 border-2 border-purple-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-yellow-500 pl-6">
+                        <h3 class="font-teko text-3xl text-yellow-400 mb-3">Habilidad: "Centella fotónica"</h3>
+                        <p class="text-gray-300 font-medium mb-4">
+                           Escanea y fija múltiples objetivos en un cono frontal para luego disparar una ráfaga de proyectiles debilitantes.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold text-white">Mecánica:</span> <span class="text-gray-400">Fija hasta 6 objetivos en un cono (1 cada 0.4s).</span></li>
+                            <li><span class="font-bold text-white">Efecto por golpe:</span> <span class="text-gray-400"><span class="text-fuchsia-400 font-bold">175 Daño Mágico</span>, <span class="text-red-400 font-bold">revela sigilo</span>, <span class="text-red-400 font-bold">40% prob. de fallo en ataques (6s)</span>.</span></li>
+                            <li><span class="font-bold text-white">Acumulaciones:</span> <span class="text-gray-400">El efecto de fallo se puede acumular hasta 3 veces.</span></li>
+                            <li><span class="font-bold text-white">Alcance:</span> <span class="text-gray-400">20 metros.</span></li>
+                            <li><span class="font-bold text-white">Enfriamiento:</span> <span class="text-gray-400">19 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NOVEDAD                                       -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NOVEDAD                                     -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Objeto con color morado -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">NUEVO OBJETO: <span class="text-purple-400">Bastón venenoso</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                         <!-- Imagen del Bastón actualizada -->
+                        <img src="https://i.imgur.com/i1lUHig.png" alt="Bastón venenoso" class="rounded-lg object-cover bg-gray-900/50 p-2 border-2 border-purple-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-yellow-500 pl-6">
+                        <h3 class="font-teko text-3xl text-yellow-400 mb-3">Habilidad: "Inyección de toxinas"</h3>
+                        <p class="text-gray-300 font-medium mb-4">
+                           Infecta a un objetivo con una potente toxina que inflige daño por segundo y reduce sus estadísticas.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold text-white">Efecto:</span> <span class="text-gray-400"><span class="text-fuchsia-400 font-bold">80% Daño Mágico/s</span>, <span class="text-red-400 font-bold">-30% Vel. Ataque</span>, <span class="text-red-400 font-bold">-30% Vel. Movimiento (4s)</span>.</span></li>
+                            <li><span class="font-bold text-white">Mecánica especial:</span> <span class="text-gray-400">La duración de la toxina se reinicia al dañar con habilidades del arma.</span></li>
+                            <li><span class="font-bold text-white">Alcance:</span> <span class="text-gray-400">14 metros.</span></li>
+                            <li><span class="font-bold text-white">Reutilización:</span> <span class="text-gray-400">19 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NOVEDAD                                       -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NOVEDAD                                     -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Objeto con color morado -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">NUEVO OBJETO: <span class="text-purple-400">Cometa de escarcha</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                         <!-- Imagen del Cometa actualizada -->
+                        <img src="https://i.imgur.com/hpAD8el.png" alt="Cometa de escarcha" class="rounded-lg object-cover bg-gray-900/50 p-2 border-2 border-purple-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-yellow-500 pl-6">
+                        <h3 class="font-teko text-3xl text-yellow-400 mb-3">Habilidad: "Nova glacial"</h3>
+                        <p class="text-gray-300 font-medium mb-4">
+                           Coloca una trampa de hielo que explota al contacto con un enemigo, infligiendo daño y aplicando varios efectos negativos.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold text-white">Efecto al explotar:</span> <span class="text-gray-400"><span class="text-fuchsia-400 font-bold">250% Daño Mágico</span>, <span class="text-red-400 font-bold">-35% Vel. Movimiento</span>, <span class="text-red-400 font-bold">-15% Curación (6s)</span>.</span></li>
+                            <li><span class="font-bold text-white">Duración de la trampa:</span> <span class="text-gray-400">15 segundos.</span></li>
+                            <li><span class="font-bold text-white">Cargas:</span> <span class="text-gray-400">Máximo 3 (1 carga cada 15s).</span></li>
+                            <li><span class="font-bold text-white">Alcance:</span> <span class="text-gray-400">14 metros.</span></li>
+                            <li><span class="font-bold text-white">Enfriamiento:</span> <span class="text-gray-400">1.5 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NOVEDAD                                       -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NOVEDAD                                     -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Objeto con color morado -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">NUEVO OBJETO: <span class="text-purple-400">Atavio de refracción</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                         <!-- Imagen del Atavio actualizada -->
+                        <img src="https://i.imgur.com/5e57n50.png" alt="Atavio de refracción" class="rounded-lg object-cover bg-gray-900/50 p-2 border-2 border-purple-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-yellow-500 pl-6">
+                        <h3 class="font-teko text-3xl text-yellow-400 mb-3">Habilidad: "Refracción"</h3>
+                        <p class="text-gray-300 font-medium mb-4">
+                           Otorga una gran cantidad de armadura y debilita a los atacantes que te golpeen.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold text-white">Buff personal:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+406 de Armadura</span> durante 6s.</span></li>
+                            <li><span class="font-bold text-white">Debuff al atacante:</span> <span class="text-gray-400"><span class="text-red-400 font-bold">-40% Daño</span> y <span class="text-red-400 font-bold">-30% Vel. de Movimiento</span> durante 4s.</span></li>
+                             <li><span class="font-bold text-white">Alcance:</span> <span class="text-gray-400">6 metros.</span></li>
+                            <li><span class="font-bold text-white">Reutilización:</span> <span class="text-gray-400">28 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NOVEDAD                                       -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NOVEDAD                                     -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Objeto con color morado -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">NUEVO OBJETO: <span class="text-purple-400">Botas de céfiro</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                         <!-- Imagen de las Botas actualizada -->
+                        <img src="https://i.imgur.com/7OIrbVU.png" alt="Botas de céfiro" class="rounded-lg object-cover bg-gray-900/50 p-2 border-2 border-purple-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-yellow-500 pl-6">
+                        <h3 class="font-teko text-3xl text-yellow-400 mb-3">Habilidad: "Embestida huracanada"</h3>
+                        <p class="text-gray-300 font-medium mb-4">
+                           Potencia hasta 5 aliados cercanos, aumentando su velocidad de ataque, lanzamiento y movimiento.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold text-white">Efecto:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+25% Vel. de Ataque</span>, <span class="text-green-400 font-bold">+30% Vel. de Lanzamiento</span>, <span class="text-green-400 font-bold">+30% Vel. de Movimiento</span>.</span></li>
+                            <li><span class="font-bold text-white">Duración:</span> <span class="text-gray-400">6 segundos.</span></li>
+                            <li><span class="font-bold text-white">Objetivos:</span> <span class="text-gray-400">Hasta 5 aliados cercanos.</span></li>
+                            <li><span class="font-bold text-white">Alcance:</span> <span class="text-gray-400">7 metros.</span></li>
+                            <li><span class="font-bold text-white">Reutilización:</span> <span class="text-gray-400">29 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NOVEDAD                                       -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE NOVEDAD                                     -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título del Nuevo Objeto con color morado -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">NUEVO OBJETO: <span class="text-purple-400">Yelmo Riposte</span></h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Columna de la Imagen -->
+                    <div class="flex items-center justify-center">
+                         <!-- Imagen del Yelmo actualizada -->
+                        <img src="https://i.imgur.com/Ou6FVZU.png" alt="Yelmo Riposte" class="rounded-lg object-cover bg-gray-900/50 p-2 border-2 border-purple-500">
+                    </div>
+
+                    <!-- Columna de Descripción -->
+                    <div class="md:col-span-2 border-l-4 border-yellow-500 pl-6">
+                        <h3 class="font-teko text-3xl text-yellow-400 mb-3">Habilidad: "Guardia Endurecido"</h3>
+                        <p class="text-gray-300 font-medium mb-4">
+                           Al recibir daño de 3 ataques básicos, en 5 segundos obtienes 220 de bloqueo durante 6 segundos.
+                        </p>
+                        <ul class="space-y-2">
+                            <li><span class="font-bold text-white">Activación:</span> <span class="text-gray-400">Recibir 3 ataques básicos.</span></li>
+                            <li><span class="font-bold text-white">Efecto:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+220 de Bloqueo</span> durante 6s.</span></li>
+                            <li><span class="font-bold text-white">Reutilización:</span> <span class="text-gray-400">25 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE NOVEDAD                                       -->
+            <!-- ================================================================== -->
+
+        </main>
+    </div>
+
+    <!-- Modal para expandir la imagen -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center p-4 z-50 hidden transition-opacity duration-300">
+        <img id="modalImage" src="" alt="Imagen ampliada" class="max-w-full max-h-full object-contain rounded-lg">
+        <button id="closeModal" class="absolute top-5 right-5 text-white text-5xl font-bold">&times;</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const closeModal = document.getElementById('closeModal');
+
+            // Añadir evento a todas las imágenes con la clase 'expandable-image'
+            document.querySelectorAll('.expandable-image').forEach(img => {
+                img.addEventListener('click', () => {
+                    modalImage.src = img.src;
+                    imageModal.classList.remove('hidden');
+                });
+            });
+
+            // Función para cerrar el modal
+            function hideModal() {
+                imageModal.classList.add('hidden');
+            }
+
+            closeModal.addEventListener('click', hideModal);
+            
+            // Cerrar el modal al hacer clic en el fondo
+            imageModal.addEventListener('click', (e) => {
+                if (e.target === imageModal) {
+                    hideModal();
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
+
