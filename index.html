@@ -43,6 +43,104 @@
             <!-- ================================================================== -->
             <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
                 <!-- Título de la Actualización -->
+                <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">AJUSTE DE HABILIDAD: Auri</h2>
+                
+                <!-- Imagen del personaje centrada -->
+                <div class="flex justify-center mb-6">
+                    <img src="https://i.imgur.com/FC0OQp0.png" alt="Personaje Auri" class="rounded-lg object-contain max-h-60 bg-gray-900/50 p-2 border-2 border-yellow-500">
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Columna ANTES (CORREGIDA) -->
+                    <div class="border-l-4 border-red-500 pl-4">
+                        <h3 class="font-teko text-3xl text-red-400 mb-3">ANTES: "Salto a los cielos"</h3>
+                        <img src="https://i.imgur.com/X8MiW0O.png" alt="Icono de la habilidad" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-red-500 w-24 h-24">
+                        <p class="text-gray-400 mb-4">
+                           La habilidad ha sido mejorada, aumentando la curación por segundo y cambiando el derribo por un levantamiento aéreo.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li><span class="font-bold text-white">Zona de Protección (Buffs):</span> 
+                                <ul class="list-disc list-inside ml-4 text-gray-400">
+                                    <li><span class="text-green-400 font-bold">+30% Resistencia al daño</span>.</li>
+                                    <li><span class="text-green-400 font-bold">+40% Curación recibida</span>.</li>
+                                    <li><span class="text-green-400 font-bold">+40% Evasión</span>.</li>
+                                    <li>Curación de <span class="text-green-400 font-bold">60% PS</span> por segundo.</li>
+                                </ul>
+                            </li>
+                            <li><span class="font-bold text-white">Al saltar:</span> <span class="text-gray-400"><span class="font-bold text-orange-400">250% Daño Físico</span> y <span class="text-red-400 font-bold">lanza por los aires 1s</span>.</span></li>
+                            <li><span class="font-bold text-white">Especial:</span> <span class="text-gray-400">Inmune al control durante la habilidad.</span></li>
+                            <li><span class="font-bold text-white">Estadísticas:</span> <span class="text-gray-400">Enfriamiento 42s, Alcance 16m.</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna AHORA (CORREGIDA) -->
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h3 class="font-teko text-3xl text-green-400 mb-3">AHORA: "Salto a los cielos"</h3>
+                        <img src="https://i.imgur.com/X8MiW0O.png" alt="Icono de la habilidad" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-green-500 w-24 h-24">
+                        <p class="text-gray-300 font-medium mb-4">
+                           La habilidad creaba una zona de protección, saltaba al objetivo para infligir daño y lo derribaba.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li><span class="font-bold text-white">Zona de Protección (Buffs):</span> 
+                                <ul class="list-disc list-inside ml-4 text-gray-400">
+                                    <li><span class="text-green-400 font-bold">+30% Resistencia al daño</span>.</li>
+                                    <li><span class="text-green-400 font-bold">+40% Curación recibida</span>.</li>
+                                    <li><span class="text-green-400 font-bold">+40% Esquiva</span>.</li>
+                                    <li>Curación de <span class="text-green-400 font-bold">50% HP</span> por segundo.</li>
+                                </ul>
+                            </li>
+                            <li><span class="font-bold text-white">Al saltar:</span> <span class="text-gray-400"><span class="font-bold text-orange-400">250% Daño Físico</span> y <span class="text-red-400 font-bold">derriba por 1s</span>.</span></li>
+                             <li><span class="font-bold text-white">Especial:</span> <span class="text-gray-400">Inmune al control durante la habilidad.</span></li>
+                            <li><span class="font-bold text-white">Estadísticas:</span> <span class="text-gray-400">Enfriamiento 42s.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="border-gray-700 my-8">
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Columna ANTES PASIVA (CORREGIDA) -->
+                     <div class="border-l-4 border-red-500 pl-4">
+                        <h3 class="font-teko text-3xl text-red-400 mb-3">PASIVA ANTES: "Guardián curativo"</h3>
+                        <img src="https://i.imgur.com/eXLVY3I.png" alt="Icono anterior de la pasiva" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-red-500 w-24 h-24">
+                        <p class="text-gray-400 mb-4">
+                           La pasiva ha sido ajustada, reduciendo la duración de la resistencia y la curación base, pero añadiendo un escudo basado en el HP máximo.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                             <li><span class="font-bold text-white">Activación:</span> <span class="text-gray-400">Si HP es inferior al 75%.</span></li>
+                             <li><span class="font-bold text-white">Buff personal:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+25% Resistencia al daño</span> durante 1s.</span></li>
+                            <li><span class="font-bold text-white">Curación Aliados:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">50% HP</span>.</span></li>
+                            <li><span class="font-bold text-white">Buff Aliados:</span> <span class="text-gray-400">Otorga un <span class="text-green-400 font-bold">escudo del 5% del HP máximo</span> por 4s.</span></li>
+                            <li><span class="font-bold text-white">Enfriamiento:</span> <span class="text-gray-400">20 segundos.</span></li>
+                        </ul>
+                    </div>
+                    <!-- Columna AHORA PASIVA (CORREGIDA) -->
+                    <div class="border-l-4 border-green-500 pl-4">
+                        <h3 class="font-teko text-3xl text-green-400 mb-3">PASIVA AHORA: "Guardián curador"</h3>
+                        <img src="https://i.imgur.com/eXLVY3I.png" alt="Icono nuevo de la pasiva" class="rounded-lg mb-4 bg-gray-900/50 p-1 border-2 border-green-500 w-24 h-24">
+                        <p class="text-gray-300 font-medium mb-4">
+                            Otorgaba resistencia al daño y curaba a los aliados, además de aplicar un escudo.
+                        </p>
+                        <ul class="space-y-2 text-sm">
+                            <li><span class="font-bold text-white">Activación:</span> <span class="text-gray-400">Si PS están por debajo del 75%.</span></li>
+                            <li><span class="font-bold text-white">Buff personal:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">+25% Resistencia al daño</span> durante 6s.</span></li>
+                            <li><span class="font-bold text-white">Curación Aliados:</span> <span class="text-gray-400"><span class="text-green-400 font-bold">60% PS</span>.</span></li>
+                             <li><span class="font-bold text-white">Buff Aliados:</span> <span class="text-gray-400">Otorga un <span class="text-green-400 font-bold">escudo</span>.</span></li>
+                            <li><span class="font-bold text-white">Recarga:</span> <span class="text-gray-400">20 segundos.</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            <!-- ================================================================== -->
+            <!-- FIN DEL BLOQUE DE ACTUALIZACIÓN                                  -->
+            <!-- ================================================================== -->
+
+            <!-- ================================================================== -->
+            <!-- INICIO DE UN BLOQUE DE ACTUALIZACIÓN                               -->
+            <!-- ================================================================== -->
+            <section class="bg-gray-800/50 p-6 rounded-xl shadow-2xl border border-gray-700">
+                <!-- Título de la Actualización -->
                 <h2 class="font-teko text-4xl text-white border-b-2 border-yellow-400 pb-2 mb-6">AJUSTE DE HABILIDAD: Draknor</h2>
                 
                 <!-- Imagen del personaje centrada -->
